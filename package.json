@@ -1,0 +1,15 @@
+{
+  "name": "@scola/api-codec-msgpack",
+  "version": "0.0.0",
+  "description": "MsgPack Codec",
+  "repository": "github:scola84/node-api-codec-msgpack",
+  "author": "M.C. van den Boogaart <scola@kvdb.name>",
+  "license": "MIT",
+  "main": "index.js",
+  "devDependencies": {
+    "babel-preset-es2015": "^6.9.0"
+  },
+  "dependencies": {
+    "msgpack-lite": "^0.1.20"
+  }
+}
