@@ -8,16 +8,16 @@ export const codec = {
   Encoder
 };
 
-export function decoder(options) {
+export function decoder() {
   return {
     type,
-    create: () => new Decoder(options)
+    create: () => new Decoder()
   };
 }
 
-export function encoder(options) {
+export function encoder() {
   return {
     type,
-    create: () => new Encoder(options)
+    create: () => new Encoder()
   };
 }
