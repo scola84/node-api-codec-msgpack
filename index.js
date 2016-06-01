@@ -1,7 +1,7 @@
 const type = 'application/msgpack';
 
-import { default as Encoder } from './lib/encoder';
-import { default as Decoder } from './lib/decoder';
+import { default as Encoder } from './src/encoder';
+import { default as Decoder } from './src/decoder';
 
 export const codec = {
   Decoder,
