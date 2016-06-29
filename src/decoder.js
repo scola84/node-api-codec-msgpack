@@ -25,11 +25,11 @@ export default class MsgPackDecoder extends Transform {
   _blob(data, callback) {
     const reader = new FileReader();
 
-    reader.onerror = () => {
+    reader.addEventListener('error', () => {
       callback(new Error(reader.error));
-    };
+    });
 
-    reader.onloadend = () => {
+    reader.addEventListener('loadend', () => {
       if (reader.error) {
         callback(new Error(reader.error));
         return;
@@ -37,7 +37,7 @@ export default class MsgPackDecoder extends Transform {
 
       this.push(decode(Buffer.from(reader.result)));
       callback();
-    };
+    });
 
     reader.readAsArrayBuffer(data);
   }
