@@ -5,7 +5,8 @@ import { default as Encoder } from './src/encoder';
 
 export const codec = {
   Decoder,
-  Encoder
+  Encoder,
+  type
 };
 
 export function decoder() {
