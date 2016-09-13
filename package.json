@@ -11,7 +11,7 @@
     "msgpack-lite": "^0.1.20"
   },
   "devDependencies": {
-    "rollup": "^0.34.13"
+    "rollup": "^0.35.9"
   },
   "scripts": {
     "build": "rollup -i index.js -o ./dist/api-codec-msgpack.js -f cjs"
