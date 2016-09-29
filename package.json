@@ -1,6 +1,6 @@
 {
   "name": "@scola/api-codec-msgpack",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "MsgPack Codec",
   "repository": "github:scola84/node-api-codec-msgpack",
   "author": "M.C. van den Boogaart <scola@kvdb.name>",
